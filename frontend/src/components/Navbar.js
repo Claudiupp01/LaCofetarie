@@ -1,29 +1,31 @@
 import React from 'react';
-import './Navbar.css'; // This will link to our new styles
+import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate
+import './Navbar.css';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  // Use a function for the home button to match your example code's logic
+  const handleHomeClick = () => {
+    navigate('/');
+  };
+
   return (
-    // The main container now uses the "navbar" class
     <nav className="navbar">
-      
-      {/* The left section of links */}
       <div className="nav-left">
-        <a href="#our-story" className="nav-link">Povestea noastra</a>
-        <a href="#production" className="nav-link">Productie</a>
+        <Link to="/povestea" className="nav-link">Povestea noastra</Link>
+        <Link to="/productie" className="nav-link">Productie</Link>
       </div>
       
-      {/* The central logo, which acts as the home button */}
-      <a href="/" className="nav-center">
+      <div className="nav-center" onClick={handleHomeClick}>
         <h1 className="brand-title">La Cofetarie</h1>
         <p className="brand-subtitle">~~ since 2025 ~~</p>
-      </a>
-
-      {/* The right section of links */}
-      <div className="nav-right">
-        <a href="#products" className="nav-link">Produse</a>
-        <a href="#contact" className="nav-link">Contact</a>
       </div>
-
+      
+      <div className="nav-right">
+        <Link to="/produse" className="nav-link">Produse</Link>
+        <Link to="/contact" className="nav-link">Contact</Link>
+      </div>
     </nav>
   );
 };

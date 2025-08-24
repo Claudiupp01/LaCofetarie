@@ -1,0 +1,189 @@
+/* --- General Page Wrapper Styles --- */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.page-content {
+  background: linear-gradient(135deg, rgba(255, 248, 220, 0.95), rgba(255, 239, 213, 0.95));
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(139, 69, 19, 0.15);
+  border: 1px solid rgba(210, 105, 30, 0.2);
+}
+
+/* --- General Content Styles --- */
+.content-title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #8B4513, #D2691E, #CD853F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.story-content h3, .production-content h3, .contact-content h3 {
+  font-family: 'Playfair Display', serif;
+  color: #8B4513;
+  margin-top: 2rem;
+  border-bottom: 2px solid rgba(210, 105, 30, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.story-content p, .production-content p, .contact-info p, .contact-item p {
+  color: #5D5D5D;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #8B4513;
+}
+.error { color: #e74c3c; }
+
+
+/* --- Contact Page Specific Styles --- */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  margin-bottom: 1.5rem;
+}
+.contact-item strong {
+  color: #8B4513;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #8B4513;
+  font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(210, 105, 30, 0.4);
+  background: #fffaf0;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form .submit-btn {
+  background: linear-gradient(135deg, #8B4513, #D2691E);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-form .submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
+}
+
+
+/* --- Products Page Specific Styles --- */
+.products-container {
+  display: grid;
+  grid-template-columns: 280px 1fr; /* Sidebar and main content */
+  gap: 2rem;
+}
+
+.filters-sidebar {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(210, 105, 30, 0.2);
+}
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(210, 105, 30, 0.2);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters-header h3 {
+  margin: 0;
+  color: #8B4513;
+  font-family: 'Playfair Display', serif;
+}
+.clear-filters-btn {
+  background: none;
+  border: 1px solid #D2691E;
+  color: #D2691E;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.clear-filters-btn:hover {
+  background: #D2691E;
+  color: white;
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+.filter-section h4 {
+  color: #8B4513;
+  margin-bottom: 0.8rem;
+}
+.search-input, .price-input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(210, 105, 30, 0.4);
+  box-sizing: border-box;
+}
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.1);
+  border: 1px solid rgba(210, 105, 30, 0.2);
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 900px) {
+  .products-container {
+    grid-template-columns: 1fr; /* Stack sidebar on top */
+  }
+  .contact-content {
+    grid-template-columns: 1fr; /* Stack contact info on top */
+  }
+}
