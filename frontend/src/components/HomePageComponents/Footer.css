@@ -1,0 +1,16 @@
+.app-footer {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.9), rgba(210, 105, 30, 0.9), rgba(205, 133, 63, 0.9));
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto; /* This pushes the footer to the bottom */
+  box-shadow: 0 -4px 20px rgba(139, 69, 19, 0.3);
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+  color: #FFF8DC;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}

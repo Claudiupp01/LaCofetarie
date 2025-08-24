@@ -1,15 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import PageTitle from './components/PageTitle'; // <-- 1. Import the new component
+import HomePage from './pages/HomePage';
+import Footer from './components/HomePageComponents/Footer'; // Import the Footer
 
 function App() {
   return (
-    <div className="App">
+    // Use the className "app" for the main container
+    <div className="app">
       <Navbar />
-      {/* 2. Use the component and pass a title to it */}
-      <PageTitle title="Povestea noastra" /> 
-      
-      {/* The rest of your page content will go below here */}
+      <HomePage />
+      <Footer /> {/* Add the Footer at the end */}
     </div>
   );
 }
