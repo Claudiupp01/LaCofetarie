@@ -1,0 +1,64 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300&display=swap');
+
+/* --- Main Navbar Container --- */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #F8F0E3; /* A soft, creamy background */
+  font-family: 'Playfair Display', serif; /* A beautiful serif font that matches the style */
+  color: #6a4f4b; /* A warm brown for the text */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* --- Logo in the Middle --- */
+.navbar-logo {
+  text-align: center;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  font-size: 2.5em; /* Larger font size for the main title */
+  font-weight: 700;
+}
+
+.navbar-logo p {
+  margin: 0;
+  font-size: 0.9em;
+  font-family: 'Roboto', sans-serif; /* A simpler font for the subtitle */
+}
+
+/* --- Link Sections (Left and Right) --- */
+.navbar-section {
+  display: flex;
+  gap: 15px; /* Adds space between the buttons */
+  flex: 1; /* Allows the sections to take up equal space */
+}
+
+/* Position the right section's content to the end */
+.navbar-section:last-child {
+  justify-content: flex-end;
+}
+
+
+/* --- Navigation Buttons --- */
+.nav-button {
+  text-decoration: none;
+  color: #6a4f4b; /* Same warm brown as the logo */
+  background-color: rgba(255, 255, 255, 0.4); /* Slightly transparent white */
+  padding: 10px 20px;
+  border-radius: 50px; /* This creates the pill shape */
+  font-size: 1em;
+  font-weight: 400;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* A very subtle shadow */
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Becomes more opaque on hover */
+  transform: translateY(-2px); /* Lifts the button slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A slightly stronger shadow on hover */
+}
