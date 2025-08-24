@@ -24,28 +24,36 @@ function ProductiePage() {
   }, []);
 
   const renderContent = () => {
-    if (loading) return <p className="loading">Se încarcă informațiile despre producție...</p>;
+    if (loading)
+      return (
+        <p className="loading">Se încarcă informațiile despre producție...</p>
+      );
     if (error) return <p className="error">Eroare: {error}</p>;
-    if (pageData) return (
-      <div className="content-section">
-        <h2 className="content-title">{pageData.title}</h2>
-        <div className="production-content">
-          <h3>Ingrediente de calitate superioară</h3>
-          <p>Folosim doar ingredientele cele mai proaspete și de cea mai înaltă calitate...</p>
-          <h3>Procesul nostru unic</h3>
-          <p>Fiecare rețetă este preparată manual, cu atenție la fiecare detaliu...</p>
+    if (pageData)
+      return (
+        <div className="content-section">
+          <h2 className="content-title">{pageData.title}</h2>
+          <div className="production-content">
+            <h3>Ingrediente de calitate superioară</h3>
+            <p>
+              Folosim doar ingredientele cele mai proaspete și de cea mai înaltă
+              calitate...
+            </p>
+            <h3>Procesul nostru unic</h3>
+            <p>
+              Fiecare rețetă este preparată manual, cu atenție la fiecare
+              detaliu...
+            </p>
+          </div>
         </div>
-      </div>
-    );
+      );
     return null;
   };
 
   return (
     <div className="page-container">
       <PageHeader pageTitle="Producție" />
-      <main className="page-content">
-        {renderContent()}
-      </main>
+      <main className="page-content">{renderContent()}</main>
     </div>
   );
 }

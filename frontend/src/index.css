@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   /* Set a neutral background; the sections will create their own color */
   background-color: #fcfaf6;
 }

@@ -6,7 +6,11 @@
 }
 
 .page-content {
-  background: linear-gradient(135deg, rgba(255, 248, 220, 0.95), rgba(255, 239, 213, 0.95));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 248, 220, 0.95),
+    rgba(255, 239, 213, 0.95)
+  );
   border-radius: 20px;
   padding: 2.5rem;
   box-shadow: 0 8px 32px rgba(139, 69, 19, 0.15);
@@ -17,7 +21,7 @@
 .content-title {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #8B4513, #D2691E, #CD853F);
+  background: linear-gradient(135deg, #8b4513, #d2691e, #cd853f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -25,29 +29,36 @@
   text-align: center;
 }
 
-.story-content h3, .production-content h3, .contact-content h3 {
+.story-content h3,
+.production-content h3,
+.contact-content h3 {
   font-family: 'Playfair Display', serif;
-  color: #8B4513;
+  color: #8b4513;
   margin-top: 2rem;
   border-bottom: 2px solid rgba(210, 105, 30, 0.3);
   padding-bottom: 0.5rem;
 }
 
-.story-content p, .production-content p, .contact-info p, .contact-item p {
-  color: #5D5D5D;
+.story-content p,
+.production-content p,
+.contact-info p,
+.contact-item p {
+  color: #5d5d5d;
   line-height: 1.8;
   font-size: 1.1rem;
   margin: 0.5rem 0;
 }
 
-.loading, .error {
+.loading,
+.error {
   text-align: center;
   padding: 2rem;
   font-size: 1.2rem;
-  color: #8B4513;
+  color: #8b4513;
 }
-.error { color: #e74c3c; }
-
+.error {
+  color: #e74c3c;
+}
 
 /* --- Contact Page Specific Styles --- */
 .contact-content {
@@ -61,7 +72,7 @@
   margin-bottom: 1.5rem;
 }
 .contact-item strong {
-  color: #8B4513;
+  color: #8b4513;
 }
 
 .contact-form .form-group {
@@ -71,11 +82,12 @@
 .contact-form label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #8B4513;
+  color: #8b4513;
   font-weight: 600;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 0.8rem;
   border-radius: 8px;
@@ -86,7 +98,7 @@
 }
 
 .contact-form .submit-btn {
-  background: linear-gradient(135deg, #8B4513, #D2691E);
+  background: linear-gradient(135deg, #8b4513, #d2691e);
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -101,7 +113,6 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
 }
-
 
 /* --- Products Page Specific Styles --- */
 .products-container {
@@ -127,20 +138,20 @@
 
 .filters-header h3 {
   margin: 0;
-  color: #8B4513;
+  color: #8b4513;
   font-family: 'Playfair Display', serif;
 }
 .clear-filters-btn {
   background: none;
-  border: 1px solid #D2691E;
-  color: #D2691E;
+  border: 1px solid #d2691e;
+  color: #d2691e;
   border-radius: 20px;
   padding: 0.3rem 0.8rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .clear-filters-btn:hover {
-  background: #D2691E;
+  background: #d2691e;
   color: white;
 }
 
@@ -148,10 +159,11 @@
   margin-bottom: 1.5rem;
 }
 .filter-section h4 {
-  color: #8B4513;
+  color: #8b4513;
   margin-bottom: 0.8rem;
 }
-.search-input, .price-input {
+.search-input,
+.price-input {
   width: 100%;
   padding: 0.5rem;
   border-radius: 5px;

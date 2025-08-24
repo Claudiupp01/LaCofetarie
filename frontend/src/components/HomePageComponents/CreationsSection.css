@@ -6,7 +6,7 @@
 .showcase-title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, #8B4513, #D2691E, #CD853F);
+  background: linear-gradient(135deg, #8b4513, #d2691e, #cd853f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -23,7 +23,12 @@
 }
 
 .pastry-card {
-  background: linear-gradient(135deg, rgba(255, 248, 220, 0.95), rgba(255, 239, 213, 0.95), rgba(245, 245, 220, 0.95));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 248, 220, 0.95),
+    rgba(255, 239, 213, 0.95),
+    rgba(245, 245, 220, 0.95)
+  );
   border-radius: 20px;
   padding: 1.5rem;
   text-align: center;
@@ -39,14 +44,14 @@
 
 .pastry-card h3 {
   font-size: 1.4rem;
-  color: #8B4513;
+  color: #8b4513;
   margin: 1rem 0 0.8rem 0;
   font-family: 'Playfair Display', serif;
   font-weight: 600;
 }
 
 .pastry-card p {
-  color: #5D5D5D;
+  color: #5d5d5d;
   line-height: 1.6;
   margin: 0;
   font-size: 1rem;
@@ -117,8 +122,12 @@
   transform: translateY(-50%) scale(1.1);
 }
 
-.carousel-left { left: 10px; }
-.carousel-right { right: 10px; }
+.carousel-left {
+  left: 10px;
+}
+.carousel-right {
+  right: 10px;
+}
 
 .carousel-dots {
   position: absolute;
@@ -141,13 +150,23 @@
 }
 
 .carousel-dot.active {
-  background: #8B4513;
+  background: #8b4513;
   transform: scale(1.2);
 }
 
 /* Placeholder image styles */
-.cake-2 { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><rect x="100" y="80" width="100" height="80" fill="%23D2691E" rx="10"/><circle cx="150" cy="100" r="15" fill="%23CD853F"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">💒</text></svg>'); }
-.cake-3 { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><circle cx="120" cy="100" r="25" fill="%23D2691E"/><circle cx="180" cy="100" r="25" fill="%23CD853F"/><circle cx="150" cy="80" r="20" fill="%238B4513"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">🍪</text></svg>'); }
-.cake-4 { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><circle cx="150" cy="100" r="50" fill="%23D2691E"/><circle cx="150" cy="100" r="30" fill="%23CD853F"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">🍬</text></svg>'); }
-.cake-5 { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><ellipse cx="150" cy="100" rx="60" ry="30" fill="%23D2691E"/><ellipse cx="150" cy="100" rx="40" ry="20" fill="%23CD853F"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">🥐</text></svg>'); }
-.cake-6 { background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><rect x="120" y="90" width="60" height="40" fill="%23D2691E" rx="5"/><rect x="130" y="100" width="40" height="20" fill="%23CD853F" rx="3"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">🍰</text></svg>'); }
+.cake-2 {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><rect x="100" y="80" width="100" height="80" fill="%23D2691E" rx="10"/><circle cx="150" cy="100" r="15" fill="%23CD853F"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">💒</text></svg>');
+}
+.cake-3 {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><circle cx="120" cy="100" r="25" fill="%23D2691E"/><circle cx="180" cy="100" r="25" fill="%23CD853F"/><circle cx="150" cy="80" r="20" fill="%238B4513"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">🍪</text></svg>');
+}
+.cake-4 {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><circle cx="150" cy="100" r="50" fill="%23D2691E"/><circle cx="150" cy="100" r="30" fill="%23CD853F"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">🍬</text></svg>');
+}
+.cake-5 {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><ellipse cx="150" cy="100" rx="60" ry="30" fill="%23D2691E"/><ellipse cx="150" cy="100" rx="40" ry="20" fill="%23CD853F"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">🥐</text></svg>');
+}
+.cake-6 {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="%23FFF8DC"/><rect x="120" y="90" width="60" height="40" fill="%23D2691E" rx="5"/><rect x="130" y="100" width="40" height="20" fill="%23CD853F" rx="3"/><text x="150" y="120" text-anchor="middle" fill="%238B4513" font-size="14">🍰</text></svg>');
+}
