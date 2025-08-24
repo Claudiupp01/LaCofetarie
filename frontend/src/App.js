@@ -1,11 +1,15 @@
 import './App.css';
-import Navbar from './components/Navbar'; // Import the Navbar component
+import Navbar from './components/Navbar';
+import PageTitle from './components/PageTitle'; // <-- 1. Import the new component
 
 function App() {
   return (
     <div className="App">
-      <Navbar /> {/* Render the Navbar here */}
-      {/* The rest of your page content will go below the navbar */}
+      <Navbar />
+      {/* 2. Use the component and pass a title to it */}
+      <PageTitle title="Povestea noastra" /> 
+      
+      {/* The rest of your page content will go below here */}
     </div>
   );
 }
